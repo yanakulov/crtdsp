@@ -27,6 +27,16 @@ The DSP combines a television speaker/cabinet impulse response, a room impulse r
 - tray minimization and a standalone Windows x64 executable;
 - TV, room and whine WAV data embedded in the DSP library.
 
+## Requirements
+
+- [RetroArch](https://retroarch.com/?page=platforms) **64-bit**. The included DSP library is built as a Windows x64 DLL, so 32-bit RetroArch will not load it.
+- Windows audio driver set to **WASAPI** in RetroArch. On Windows, RetroArch supports WASAPI as an audio backend; CRTDSP is tuned and tested with that path.
+- **Windows** for `CRTDSP-Control.exe`. The configurator is currently a Windows-only standalone app.
+
+No separate .NET runtime should be required for the release build because `CRTDSP-Control.exe` is published as a self-contained Windows x64 executable. If you build the configurator from source, install the [.NET SDK](https://dotnet.microsoft.com/download).
+
+The DSP configuration itself is just a `.dsp` text file. You can tune it on Windows with CRTDSP Control, then copy the configured `CRTDSP.dsp` and matching DSP library to another platform such as Steam Deck/Linux. The configurator will not run there yet, but the saved settings should still be usable by a compatible RetroArch DSP build.
+
 ## Installation
 
 1. Download the latest release archive.
@@ -47,7 +57,9 @@ If you do not hear it, try raising the level slowly. The author's personal audib
 
 ## Video
 
-A video demo will be recorded and added soon.
+[![CRTDSP video demo](https://img.youtube.com/vi/gkwV8Fqs5U4/maxresdefault.jpg)](https://www.youtube.com/watch?v=gkwV8Fqs5U4)
+
+[Watch the CRTDSP demo on YouTube](https://www.youtube.com/watch?v=gkwV8Fqs5U4)
 
 ## Documentation
 
