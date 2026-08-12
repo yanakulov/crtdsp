@@ -30,7 +30,7 @@ The DSP combines a television speaker/cabinet impulse response, a room impulse r
 ## Installation
 
 1. Download the latest release archive.
-2. Copy the complete `CRTDSP-Live-v1.0` folder to `RetroArch/filters/audio/`.
+2. Copy the complete `CRTDSP-Live-v1.1` folder to `RetroArch/filters/audio/`.
 3. In RetroArch, open `Settings > Audio > DSP Plugin` and select `CRTDSP.dsp`.
 4. Run `CRTDSP-Control.exe` from the same folder.
 5. Press `Ctrl+Shift+F10` to show or hide the service menu.
@@ -53,6 +53,17 @@ A video demo will be recorded and added soon.
 
 - [Settings reference](docs/SETTINGS.MD)
 - [Credits, sources and licenses](docs/LICENSES.MD)
+
+## Changelog
+
+### 1.1
+
+- Added a live DSP bypass switch: `filter0_dsp_enabled`.
+- Added a **MASTER DSP** block in CRTDSP Control with `DSP ON / DSP OFF`.
+- Bypass mode keeps RetroArch using the loaded DSP plugin while returning original game audio.
+- Turning DSP off also stops the calibration generator.
+- Built-in presets re-enable DSP when applied.
+- Added test coverage for live bypass reload behavior.
 
 ## Audio sources
 

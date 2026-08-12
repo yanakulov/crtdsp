@@ -1,6 +1,6 @@
 # Credits, sources and licenses
 
-This document records the third-party material used by CRTDSP 1.0 and the provenance currently available for its embedded audio resources.
+This document records the third-party material used by CRTDSP 1.1 and the provenance currently available for its embedded audio resources.
 
 ## CRT whine recording
 
@@ -17,7 +17,7 @@ The creator's credit and subject were also preserved in the WAV INFO metadata. C
 
 CRTDSP embeds processed `tv.wav` and `room.wav` impulse responses. Their original source information has been lost, so no reliable author, URL or license can be stated at this time. The sources will be recovered later and added to this document when available.
 
-Their SHA-256 hashes are recorded below so the exact files used in CRTDSP 1.0 can be matched if the original source information is recovered.
+Their SHA-256 hashes are recorded below so the exact files used in CRTDSP 1.1 can be matched if the original source information is recovered.
 
 ### Embedded audio fingerprints
 
